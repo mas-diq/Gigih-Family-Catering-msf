@@ -1,23 +1,3 @@
 Rails.application.routes.draw do
-  get 'categorys/index'
-  get 'categorys/show'
-  get 'categorys/new'
-  get 'categorys/edit'
-  get 'category_menus/index'
-  get 'category_menus/show'
-  get 'category_menus/new'
-  get 'category_menus/edit'
-  get 'menus/index'
-  get 'menus/show'
-  get 'menus/new'
-  get 'menus/edit'
-  get 'order_details/index'
-  get 'order_details/show'
-  get 'order_details/new'
-  get 'order_details/edit'
-  get 'orders/index'
-  get 'orders/show'
-  get 'orders/new'
-  get 'orders/edit'
-  resources :orders, :order_details, :menus, :category_menus, :category
+  resources :orders, :order_details, :menus, :category_menus, :categorys
 end

@@ -1,2 +1,23 @@
 <h1>OrderDetails#index</h1>
-<p>Find me in app/views/order_details/index.html.erb</p>
+<h1> Items </h1>
+<table>
+  <thead>
+  <tr>
+    <td><b>Order Id</b></td>
+    <td><b>Menu Id</b></td>
+    <td><b>Price</b></td>
+    <td><b>Quantity</b></td>
+  </tr>
+  </thead>
+  <tbody>
+  <% @order_details.each do |order| %>
+    <tr>
+      <td><%= order.order_id %></td>
+      <td><%= order.menu_id %></td>
+      <td><%= order.price %></td>
+      <td><%= order.quantity %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<!--<a href="/items/new">New Item</a>-->
