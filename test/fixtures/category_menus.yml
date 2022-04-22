@@ -1,11 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  category_menu_id: MyString
-  menu_id: MyString
-  category_id: MyString
+  menu: one
+  category: one
 
 two:
-  category_menu_id: MyString
-  menu_id: MyString
-  category_id: MyString
+  menu: two
+  category: two
