@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="fb49c244-4db3-467b-9c32-75fffab4ac7a" name="Rails Gigih-Family-Catering-msf: development Mapping">
+      <data-sources db="7282fbe1-1b11-4b24-82ee-202111005ef9" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
