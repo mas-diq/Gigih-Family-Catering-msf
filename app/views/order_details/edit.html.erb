@@ -1,2 +1,46 @@
-<h1>OrderDetails#edit</h1>
-<p>Find me in app/views/order_details/edit.html.erb</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gigih Family Catering App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="/orders">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/order_details">Order Detail</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/categorys">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/category_menus">Category Menu</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center mb-3 font-weight-bold">Edit Orders Details</h1>
+      <div class="table-wrap">
+        <%= form_with model: @order_detail do |form| %>
+          <%= form.text_field :order_id, placeholder: "Order Id" %>
+          <%= form.text_field :menu_id, placeholder: "Menu Id" %>
+          <%= form.text_field :price, placeholder: "Price" %>
+          <%= form.text_field :quantity, placeholder: "Quantity" %>
+          <%= form.submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

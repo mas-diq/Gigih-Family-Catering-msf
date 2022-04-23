@@ -1,2 +1,50 @@
-<h1>Menus#new</h1>
-<p>Find me in app/views/menus/new.html.erb</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gigih Family Catering App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/orders">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/order_details">Order Detail</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/menus">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/categorys">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/category_menus">Category Menu</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center mb-3 font-weight-bold">Create New Menu</h1>
+      <div class="table-wrap">
+        <table class="table">
+          <thead class="thead-light">
+          <tr>
+            <%= form_with model: @menu do |form| %>
+              <th scope="col"><%= form.text_field :name, placeholder: "Name" %></th>
+              <th scope="col"><%= form.text_field :price, placeholder: "Price" %></th>
+              <th scope="col"><%= form.text_field :description, placeholder: "Description" %></th>
+              <th scope="col"><%= form.submit %></th>
+            <% end %>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

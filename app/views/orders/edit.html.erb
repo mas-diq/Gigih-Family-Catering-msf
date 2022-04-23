@@ -18,6 +18,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/categorys">Category</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/category_menus">Category Menu</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -28,7 +31,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="text-center mb-3 font-weight-bold">List Orders </h1>
+      <h1 class="text-center mb-3 font-weight-bold">Edit Orders</h1>
       <div class="table-wrap">
         <%= form_with model: @order do |form| %>
           <%= form.text_field :customer_name, placeholder: "Customer Name" %>

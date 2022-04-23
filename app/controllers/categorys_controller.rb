@@ -2,18 +2,18 @@ class CategorysController < ApplicationController
   before_action :current_category, only: [:show, :edit, :update, :destroy]
 
   def index
-    @categorys = category.all
+    @categorys = Category.all
   end
 
   def show
   end
 
   def new
-    @category = category.new
+    @category = Category.new
   end
 
   def create
-    @category = category.create(category_params)
+    @category = Category.create(category_params)
     redirect_to category_path(@category)
   end
 
