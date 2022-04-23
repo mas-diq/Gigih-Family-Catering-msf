@@ -1,25 +1,38 @@
-# Rails on Replit
+# Gigih Family Catering Final Project
+## Simple CRUD App with Ruby on Rails
+Ruby on Rails, sometimes known as "RoR" or just "Rails," is an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.
 
-This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
+## Installation
+If you're using rbenv, you can install ruby 3.0.3 by run this command
+```bash
+rbenv install 3.0.03
+```
 
-This template was generated using `rails new` (after you install the `rails` gem from the packager sidebar) so you can always do that if you prefer to set it up from scratch. The only had two make config changes we had to make to run it on Replit:
+## End Point
+### This endpoint will show list of the orders
+```bash
+localhost/orders
+```
 
-- bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
-- allow `*.repl.co` hosts (see `config/environments/development.rb`)
-- allow the app to be iframed on `replit.com` (see `config/application.rb`)
+### This endpoint will show list of the order details
+```bash
+localhost/order_details
+```
 
-## Running the app
+### This endpoint will show list of the menu
+```bash
+localhost/menus
+```
 
-Simple hit run! You can edit the run command from the `.replit` file.
+### This endpoint will show list of the category
+```bash
+localhost/categorys
+```
 
-## Running commands
+### This endpoint will show list of the category menu
+```bash
+localhost/category_menu
+```
 
-Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
-
-## Database
-
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
-
-## Help
-
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Alternatively you can [ask in the community](https://replit.com/talk/ask). Feel free to report bugs [here](https://replit.com/bugs) and give us feedback [here](https://Replit/feedback).
+## Noted!
+This project still has some limitations and bugs, so need to recreate the model, view and controller
