@@ -43,12 +43,12 @@
           </tr>
           </thead>
           <tbody>
-          <% @categorys.each do |n| %>
+          <% @categories.each do |n| %>
             <tr>
-              <td><%= link_to n.id, order_detail_path(n) %></td>
-              <td><%= link_to n.name, order_detail_path(n) %></td>
-              <td><%= link_to 'Edit', edit_order_path(n), method: 'get' %></td>
-              <td><%= button_to 'Remove', order_path(n), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to n.id, category_path(n) %></td>
+              <td><%= link_to n.name, category_path(n) %></td>
+              <td><%= link_to 'Edit', edit_category_path(n), method: 'get' %></td>
+              <td><%= button_to 'Remove', category_path(n), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
           <% end %>
           </tbody>
         </table>

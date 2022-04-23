@@ -1,2 +1,58 @@
-<h1>CategoryMenus#index</h1>
-<p>Find me in app/views/category_menus/index.html.erb</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gigih Family Catering App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="/orders">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/order_details">Order Detail</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menus">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/categorys">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/category_menus">Category Menu</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center mb-3 font-weight-bold">List Category Menus</h1>
+      <div class="table-wrap">
+        <table class="table">
+          <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Menu</th>
+            <th scope="col">Category</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @category_menus.each do |n| %>
+            <tr>
+              <td><%= link_to n.id, order_detail_path(n) %></td>
+              <td><%= link_to n.menu.name, order_detail_path(n) %></td>
+              <td><%= link_to n.category.name, order_detail_path(n) %></td>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>

@@ -36,7 +36,7 @@
         <table class="table">
           <thead class="thead-light">
           <tr>
-            <%= form_with model: @category do |form| %>
+            <%= form_with model: @categories do |form| %>
               <th scope="col"><%= form.text_field :name, placeholder: "Category Name" %></th>
               <th scope="col"><%= form.submit %></th>
             <% end %>

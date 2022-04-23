@@ -2,7 +2,7 @@ class CategorysController < ApplicationController
   before_action :current_category, only: [:show, :edit, :update, :destroy]
 
   def index
-    @categorys = Category.all
+    @categories = Category.all
   end
 
   def show
@@ -27,7 +27,7 @@ class CategorysController < ApplicationController
 
   def destroy
     @category.destroy
-    redirect_to categorys_path
+    redirect_to categories_path
   end
 
   private def category_params
@@ -35,6 +35,6 @@ class CategorysController < ApplicationController
   end
 
   def current_category
-    @category = category.find(params[:id])
+    @category = Category.find(params[:id])
   end
 end
