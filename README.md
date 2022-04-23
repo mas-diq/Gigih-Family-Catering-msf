@@ -1,4 +1,6 @@
 # Gigih Family Catering Final Project
+![alt text](https://github.com/mas-diq/Gigih-Family-Catering-msf/blob/main/.lesson/Screenshot.png)
+
 ## Simple CRUD App with Ruby on Rails
 Ruby on Rails, sometimes known as "RoR" or just "Rails," is an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.
 
